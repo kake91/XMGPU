@@ -39,6 +39,22 @@ num_available_gpus=$(nvidia-smi --list-gpus | wc -l)
 echo "You have $num_available_gpus GPU(s) available."
 
 
+
+tmux new-session -d -s mining
+sleep 5
+echo "---------------------------"
+
+tmux split-window -v
+sleep 5
+echo "---------------------------"
+
+# Run the miner in the first pane
+tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
+sleep 5
+echo "---------------------------"
+
+
+tmux send-keys -t 1 'sudo chmod +x xengpuminer ' C-m
 while true; do
   # Ask the user to enter the number of GPUs they want to use
   echo "Enter the number of GPUs you want to use (between 1 to $num_available_gpus , max number is 15):"
@@ -54,24 +70,7 @@ while true; do
   fi
 done
 
-# Rest of your script
 echo "---------------------------"
-
-
-
-tmux new-session -d -s mining
-sleep 5
-echo "---------------------------"
-
-tmux split-window -v
-sleep 5
-echo "---------------------------"
-
-# Run the miner in the first pane
-tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-sleep 5
-echo "---------------------------"
-
 
 # Determine the number of GPUs to use
 
