@@ -65,6 +65,6 @@ tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
 sleep 5
 echo "---------------------------"
 
-tmux send-keys -t 1 'cd XENGPUMiner && sudo chmod +x xengpuminer && ./xengpuminer' C-m
+tmux send-keys -t 1 'cd XENGPUMiner' C-m
 sleep 5
 echo "---------------------------"
