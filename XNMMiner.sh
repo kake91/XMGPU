@@ -65,7 +65,7 @@ if [ $num_available_gpus -eq 1 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner
@@ -89,7 +89,7 @@ if [ $num_available_gpus -eq 2 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0 and GPU 1
@@ -113,7 +113,7 @@ if [ $num_available_gpus -eq 3 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, and GPU 2
@@ -136,7 +136,7 @@ if [ $num_available_gpus -eq 4 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, and GPU 3
@@ -159,7 +159,7 @@ if [ $num_available_gpus -eq 5 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, and GPU 4
@@ -182,7 +182,7 @@ if [ $num_available_gpus -eq 6 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, and GPU 5
@@ -205,7 +205,7 @@ if [ $num_available_gpus -eq 7 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, GPU 5, and GPU 6
@@ -228,12 +228,12 @@ if [ $num_available_gpus -eq 8 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 2
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, GPU 5, GPU 6, and GPU 7
     tmux send-keys -t 1 'cd XENGPUMiner sudo chmod +x xengpuminer && ./xengpuminer -d0 & ./xengpuminer -d1 & ./xengpuminer -d2 & ./xengpuminer -d3 & ./xengpuminer -d4 & ./xengpuminer -d5 & ./xengpuminer -d6 & ./xengpuminer -d7' C-m
-    sleep 10
+    sleep 5
     echo "---------------------------"
 fi
 
@@ -251,7 +251,7 @@ if [ $num_available_gpus -eq 9 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, GPU 5, GPU 6, GPU 7, and GPU 8
@@ -274,7 +274,7 @@ if [ $num_available_gpus -eq 10 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-    sleep 5
+    sleep 20
     echo "---------------------------"
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, GPU 5, GPU 6, GPU 7, GPU 8, and GPU 9
