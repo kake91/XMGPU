@@ -23,6 +23,9 @@ cd XENGPUMiner || exit
 echo "Building XENGPUMiner..."
 chmod +x build.sh
 ./build.sh
+sleep 5
+echo "---------------------------"
+
 
 # Enter Ethereum address in config.conf
 echo "Enter your Ethereum address: "
