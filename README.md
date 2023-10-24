@@ -1,7 +1,6 @@
 # XMGPU
 this oneclik Miner was inspired by JozefJarosciak /xgpu
 # To Mine XENBLOCK, Rent a GPU on vast and copy paste the following command 
-git clone https://github.com/kake91/XMGPU && cd XMGPU && sudo chmod +x XNMMiner.sh && sudo ./XNMMiner.sh
 curl -o ~/XNMMiner.sh -LJO https://raw.githubusercontent.com/kake91/XMGPU/master/XNMMiner.sh  && sudo chmod +x XNMMiner.sh && sudo ./XNMMiner.sh
 
 # Execution for 10 GPU Max
