@@ -8,13 +8,25 @@ if ! sudo apt update; then
     exit 1
 fi
 
-# Install required packages
-install_package "ocl-icd-opencl-dev"
-install_package "nano"
-install_package "tmux"
-install_package "cmake"
-install_package "python3-pip"
+sudo apt -y install ocl-icd-opencl-dev
+sleep 5
+echo "---------------------------"
 
+sudo apt -y install nano
+sleep 5
+echo "---------------------------"
+
+sudo apt -y install tmux
+sleep 5
+echo "---------------------------"
+
+sudo apt -y install cmake
+sleep 5
+echo "---------------------------"
+
+sudo apt -y install python3-pip
+sleep 5
+echo "---------------------------"
 # Clone the repository and build the project
 echo "Cloning XENGPUMiner repository..."
 git clone https://github.com/shanhaicoder/XENGPUMiner.git
