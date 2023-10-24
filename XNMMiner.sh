@@ -89,12 +89,12 @@ echo "---------------------------"
 
 # Run the miner in the first pane
 tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-sleep 5
+sleep 3
 echo "---------------------------"
 
 
 
-
+sleep 5
 gpu_counter=0  # Initialize a counter for the GPUs used
 
 while [ "$gpu_counter" -lt "$num_gpus" ]; do
