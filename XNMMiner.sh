@@ -99,7 +99,7 @@ gpu_counter=0  # Initialize a counter for the GPUs used
 
 while [ "$gpu_counter" -lt "$num_gpus" ]; do
   # Increment the GPU counter and send the corresponding command
-  gpu_command="cd XENGPUMiner && sudo chmod +x xengpuminer && ./xengpuminer -d$gpu_counter"
+  gpu_command="sudo chmod +x xengpuminer && ./xengpuminer -d$gpu_counter"
   tmux send-keys -t 1 "$gpu_command" C-m
   ((gpu_counter++))
 done
