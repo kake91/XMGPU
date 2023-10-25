@@ -217,7 +217,7 @@ if [ $num_gpus -eq 8 ]; then
 
     # Running the python miner
     tmux send-keys -t 0 'cd XENGPUMiner && python3 miner.py --gpu=true' C-m
-  
+    sleep 5
     
     # Running the GPU miner for GPU 0, GPU 1, GPU 2, GPU 3, GPU 4, GPU 5, GPU 6, and GPU 7
     tmux send-keys -t 1 'sudo chmod +x xengpuminer && ./xengpuminer -d0 & ./xengpuminer -d1 & ./xengpuminer -d2 & ./xengpuminer -d3 & ./xengpuminer -d4 & ./xengpuminer -d5 & ./xengpuminer -d6 & ./xengpuminer -d7' C-m
