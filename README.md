@@ -7,4 +7,4 @@ curl -o ~/XNMMiner.sh -LJO https://raw.githubusercontent.com/kake91/XMGPU/master
 The script will install all the necessary tools and clone the XENGPUMiner from the repository 'shanhaicoder/XENGPUMiner.' 
 You will be prompted to enter your wallet address and press enter
 After that you will be prompted to enter the number of GPU you wanna use and press enter
-After that, give it some time to run everything with all the GPU available. Anyone is welcome to use and try it, but there is still some optimization to be done
+After that, give it some time to run everything with number of GPU selected. Anyone is welcome to use and try it, but there is still some optimization to be done
